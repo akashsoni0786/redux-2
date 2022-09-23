@@ -54,6 +54,7 @@ export default function ContactForm() {
         type:'ADD_CONTACT',
         data:one_contact
       })
+      alert("Contact added successfully!")
      
       
     }

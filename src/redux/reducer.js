@@ -24,6 +24,7 @@ const reducers = (state=initialState,action) => {
             contacts : state.contacts.filter((i)=>i.mobile!==action.data)
         }
       }
+     
       
       return state;
 }

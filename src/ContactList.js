@@ -59,6 +59,7 @@ export default function ContactList() {
   };
 
   const showdetails = (mob) => {
+   
     contct.map((i) => {
       if (i.mobile === mob) {
         setShowme(i);
