@@ -90,9 +90,7 @@ export default function ContactList() {
               <TableCell align="left" style={{ top: 57 }}>
                 <b>Email</b>
               </TableCell>
-              <TableCell align="right" style={{ top: 57 }} >
-                <b>Delete</b>
-              </TableCell>
+             
             </TableRow>
           </TableHead>
           <TableBody>
@@ -117,18 +115,7 @@ export default function ContactList() {
                     <TableCell align="left" style={{ top: 57 }}>
                       {i.mail}
                     </TableCell>
-                    <TableCell
-                      align="right"
-                      onClick={()=>{deleterow(i.mobile)}}
-                      style={{
-                        top: 57,
-                        color: "red",
-                        cursor: "pointer",
-                        "&:hover": { fontWeight: "bolder" },
-                      }}
-                    >
-                      Delete
-                    </TableCell>
+                   
                   </TableRow>
                 );
               })}
