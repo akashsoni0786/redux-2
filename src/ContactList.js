@@ -148,6 +148,8 @@ export default function ContactList() {
                 >
                   {showme.mail}
                 </TableCell>
+
+                
               </TableRow>
             </Table>
           </Box>
@@ -208,6 +210,9 @@ export default function ContactList() {
                 <TableCell align="right" style={{ top: 57 }}>
                   <b>View</b>
                 </TableCell>
+                <TableCell align="right" style={{ top: 57 }}>
+                  <b>Delete</b>
+                </TableCell>
 
               </TableRow>
             </TableHead>
@@ -252,7 +257,18 @@ export default function ContactList() {
                       >
                         view
                       </TableCell>
-                      
+                      <TableCell
+                      align="right"
+                      onClick={()=>{deleterow(i.mobile)}}
+                      style={{
+                        top: 57,
+                        color: "red",
+                        cursor: "pointer",
+                        "&:hover": { fontWeight: "bolder" },
+                      }}
+                    >
+                      Delete
+                    </TableCell>
                     </TableRow>
                   );
                 })}
